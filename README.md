@@ -4,8 +4,9 @@ IMPLEMENTATION OF HANDWRITTEN DIGITS USING FULLY CONNECTED ANN
 
 # Detecting Handwritten Digits Using a Fully Connected Artificial Neural Network in FPGA
 
-![Neuron Block Diagram](./Proposed_Architecture_of_neuron.png)
- <!-- Add a relevant image or illustration -->
+<div align="center">
+  <img src="./Proposed_Architecture_of_neuron.png" alt="Proposed Architecture of Neuron" />
+</div>
 
 ## Overview
 
@@ -40,7 +41,9 @@ The project implements a fully connected, feed-forward ANN with 5 layers:
 
 ### Block Diagram of the Neuron
 
-![Neuron Block Diagram](./neuron.png) <!-- Add neuron block diagram image -->
+<div align="center">
+  <img src="./neuron.png" alt="Neuron Block Diagram" />
+</div>
 
 The basic operation of a neuron involves a weighted sum of inputs followed by an activation function. This project implements both Sigmoid and ReLU as activation functions.
 
@@ -52,36 +55,4 @@ Each neuron is implemented using Verilog, with weights and biases pre-trained in
 
 ### Activation Functions
 
-- **Sigmoid:** Ideal for small-scale networks, providing smooth gradient transitions.
-- **ReLU:** Provides faster convergence but may lead to dead neurons in some cases.
-
-## Results and Comparison
-
-### Performance Metrics
-
-| Metric            | ReLU   | Sigmoid |
-|-------------------|--------|---------|
-| Flip-Flops        | 66     | 52      |
-| LUTs              | 58     | 47      |
-| Dynamic Power     | 93%    | 99%     |
-| Accuracy          | 91%    | 98%     |
-
-### Comparison with GPU Implementation
-
-The ANN implemented on FPGA outperformed the TensorFlow-based GPU implementation in terms of accuracy, power consumption, and memory efficiency. The FPGA used significantly fewer resources while achieving higher accuracy.
-
-## Conclusion
-
-The FPGA-based ANN implementation for handwritten digit recognition not only meets but exceeds expectations in terms of accuracy and efficiency. This project demonstrates that FPGAs can be a viable alternative to GPUs for specific AI/ML tasks, especially in environments where power and latency are critical factors.
-
-## References
-
-1. Charles Rajesh Kumar J, et al. "VLSI design and implementation of High-performance Binary-weighted convolutional artificial neural networks for embedded vision-based IoT."
-2. Daniel Jonasson, "Object Recognition Through Convolutional Learning For FPGA."
-3. MD Shahbaz Khan, et al. "FPGA Simulation of Fingertip Digit Recognition Using CNN."
-
-<!-- Add more references as needed -->
-
----
-
-This `README.md` file provides a comprehensive and structured overview of your project, emphasizing its key features and the significance of FPGA-based implementations for AI/ML tasks. You can further enhance it by adding images, diagrams, or any other visuals that make your repository more engaging and informative.
+- **Sigmoid:** Ideal for smal

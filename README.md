@@ -1,12 +1,11 @@
 # DigitRecognizerANN
 IMPLEMENTATION OF HANDWRITTEN DIGITS USING FULLY CONNECTED ANN
-Based on the document you provided, here’s a creative and structured `README.md` file for your GitHub repository:
-
 ---
 
 # Detecting Handwritten Digits Using a Fully Connected Artificial Neural Network in FPGA
 
-![FPGA Neural Network](https://via.placeholder.com/1000x300) <!-- Add a relevant image or illustration -->
+![Neuron Block Diagram](images/neuron_block_diagram.png)
+ <!-- Add a relevant image or illustration -->
 
 ## Overview
 
@@ -82,10 +81,6 @@ The FPGA-based ANN implementation for handwritten digit recognition not only mee
 3. MD Shahbaz Khan, et al. "FPGA Simulation of Fingertip Digit Recognition Using CNN."
 
 <!-- Add more references as needed -->
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 

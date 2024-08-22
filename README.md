@@ -40,7 +40,7 @@ The project implements a fully connected, feed-forward ANN with 5 layers:
 
 ### Block Diagram of the Neuron
 
-![Neuron Block Diagram](./neuron.pdf) <!-- Add neuron block diagram image -->
+![Neuron Block Diagram](./neuron.png) <!-- Add neuron block diagram image -->
 
 The basic operation of a neuron involves a weighted sum of inputs followed by an activation function. This project implements both Sigmoid and ReLU as activation functions.
 

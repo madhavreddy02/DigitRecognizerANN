@@ -4,7 +4,7 @@ IMPLEMENTATION OF HANDWRITTEN DIGITS USING FULLY CONNECTED ANN
 
 # Detecting Handwritten Digits Using a Fully Connected Artificial Neural Network in FPGA
 
-![Neuron Block Diagram](images/neuron_block_diagram.png)
+![Neuron Block Diagram](./Proposed_Architecture_of_neuron.png)
  <!-- Add a relevant image or illustration -->
 
 ## Overview

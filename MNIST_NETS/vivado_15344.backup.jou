@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Sun Aug 18 03:11:07 2024
+# Process ID: 15344
+# Current directory: C:/NeuralNetworks/neuralNetwork/verification_ph2/myProject1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5484 C:\NeuralNetworks\neuralNetwork\verification_ph2\myProject1\myProject1.xpr
+# Log file: C:/NeuralNetworks/neuralNetwork/verification_ph2/myProject1/vivado.log
+# Journal file: C:/NeuralNetworks/neuralNetwork/verification_ph2/myProject1\vivado.jou
+# Running On: Madhav002, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16904 MB
+#-----------------------------------------------------------
+start_guiopen_project C:/NeuralNetworks/neuralNetwork/verification_ph2/myProject1/myProject1.xpr
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
+launch_simulation
+source top_sim.tcl
+set_property generate_scripts_only 1 [current_fileset -simset]
+-xsimdir "C:\NeuralNetworks\neuralNetwork\verification_ph2\myProject1\myProject1.sim\sim_1\behav\xsim"
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+set_property generate_scripts_only 0 [current_fileset -simset]
+launch_simulation
+launch_simulation
+source top_sim.tcl
+run all
+close_sim
+launch_simulation
+source top_sim.tcl
+run all
+close_sim
+launch_simulation
+source top_sim.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run all
+close_sim

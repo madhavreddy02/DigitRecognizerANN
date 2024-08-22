@@ -1,0 +1,1352 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Mon Aug 19 12:23:12 2024
+# Process ID: 11152
+# Current directory: C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1112 C:\NeuralNetworks\neuralNetwork\verification_ph2\MNIST_NETS\myProject1.xpr
+# Log file: C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/vivado.log
+# Journal file: C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS\vivado.jou
+# Running On: Madhav002, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16904 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1532.746 ; gain = 427.203
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.578 . Memory (MB): peak = 1924.000 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 566 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2079.312 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:42 . Memory (MB): peak = 2226.328 ; gain = 664.816
+report_power -name {power_1}
+Command: report_power -name power_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2888.988 ; gain = 256.871
+close_design
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'top_sim'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_10.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_11.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_12.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_13.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_14.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_15.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_16.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_17.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_18.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_19.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_2.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_20.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_21.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_22.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_23.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_24.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_25.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_26.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_27.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_28.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_29.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_3.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_4.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_5.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_6.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_7.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_8.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_9.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_10.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_11.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_12.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_13.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_14.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_15.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_16.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_17.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_18.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_19.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_2.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_20.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_21.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_22.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_23.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_24.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_25.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_26.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_27.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_28.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_29.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_3.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_4.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_5.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_6.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_7.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_8.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_9.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_2.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_3.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_4.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_5.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_6.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_7.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_8.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_9.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_2.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_3.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_4.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_5.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_6.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_7.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_8.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_9.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/sigContent.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_10.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_11.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_12.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_13.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_14.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_15.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_16.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_17.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_18.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_19.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_2.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_20.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_21.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_22.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_23.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_24.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_25.mif'
+INFO: [Common 17-14] Message 'SIM-utils 43' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_sim_vlog.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim xil_defaultlib.glbl -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 's_axi_awaddr' [C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/tb/top_sim.v:73]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 's_axi_awprot' [C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/tb/top_sim.v:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 's_axi_araddr' [C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/tb/top_sim.v:84]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 's_axi_arprot' [C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/tb/top_sim.v:85]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'radd' [C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/neuron.v:172]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'i_valid' [C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/zynet.v:378]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_1.v" Line 1. Module Layer_1(sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_2.v" Line 1. Module Layer_2(numWeight=30,layerNum=2,sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_3.v" Line 1. Module Layer_3(NN=10,numWeight=30,layerNum=3,sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_4.v" Line 1. Module Layer_4(NN=10,numWeight=10,layerNum=4,sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_1.v" Line 1. Module Layer_1(sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_2.v" Line 1. Module Layer_2(numWeight=30,layerNum=2,sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_3.v" Line 1. Module Layer_3(NN=10,numWeight=30,layerNum=3,sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_4.v" Line 1. Module Layer_4(NN=10,numWeight=10,layerNum=4,sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_lite_wrapper_default
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.ReLU
+Compiling module xil_defaultlib.neuron(layerNo=1,weightIntWidth=...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=1,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=2,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=3,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=4,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,weig...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=5,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=6,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=7,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=8,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=9,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=10,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=11,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=12,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=13,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=14,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=15,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=16,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=17,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=18,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=19,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=20,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=21,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=22,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=23,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=24,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=25,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=26,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=27,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=28,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=29,wei...
+Compiling module xil_defaultlib.Layer_1(sigmoidSize=5)
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,numWeight=30,we...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=1,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=2,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=3,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=4,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,layer...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=5,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=6,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=7,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=8,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=9,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=10,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=11,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=12,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=13,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=14,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=15,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=16,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=17,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=18,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=19,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=20,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=21,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=22,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=23,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=24,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=25,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=26,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=27,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=28,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=29,num...
+Compiling module xil_defaultlib.Layer_2(numWeight=30,layerNum=2,...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,numWeight=30,we...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=1,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=2,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=3,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=4,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,layer...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=5,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=6,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=7,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=8,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=9,numW...
+Compiling module xil_defaultlib.Layer_3(NN=10,numWeight=30,layer...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,numWeight=10,we...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=1,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=2,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=3,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=4,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,layer...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=5,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=6,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=7,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=8,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=9,numW...
+Compiling module xil_defaultlib.Layer_4(NN=10,numWeight=10,layer...
+Compiling module xil_defaultlib.maxFinder
+Compiling module xil_defaultlib.zyNet
+Compiling module xil_defaultlib.top_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_sim_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:25 . Memory (MB): peak = 3165.934 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '25' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Configuration completed                      0 ns
+Trying to read file: ÿÿÿÿÿÿtest_data_0000.txt
+Constructed filename:       test_data_0000.txt
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:39 . Memory (MB): peak = 3165.934 ; gain = 0.000
+run all
+1. Accuracy: 100.000000, Detected number: 7, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0001.txt
+Constructed filename:       test_data_0001.txt
+2. Accuracy: 100.000000, Detected number: 2, Expected: 0002
+Trying to read file: ÿÿÿÿÿÿtest_data_0002.txt
+Constructed filename:       test_data_0002.txt
+3. Accuracy: 100.000000, Detected number: 1, Expected: 0001
+Trying to read file: ÿÿÿÿÿÿtest_data_0003.txt
+Constructed filename:       test_data_0003.txt
+4. Accuracy: 100.000000, Detected number: 0, Expected: 0000
+Trying to read file: ÿÿÿÿÿÿtest_data_0004.txt
+Constructed filename:       test_data_0004.txt
+5. Accuracy: 100.000000, Detected number: 4, Expected: 0004
+Trying to read file: ÿÿÿÿÿÿtest_data_0005.txt
+Constructed filename:       test_data_0005.txt
+6. Accuracy: 100.000000, Detected number: 1, Expected: 0001
+Trying to read file: ÿÿÿÿÿÿtest_data_0006.txt
+Constructed filename:       test_data_0006.txt
+7. Accuracy: 100.000000, Detected number: 4, Expected: 0004
+Trying to read file: ÿÿÿÿÿÿtest_data_0007.txt
+Constructed filename:       test_data_0007.txt
+8. Accuracy: 100.000000, Detected number: 9, Expected: 0009
+Trying to read file: ÿÿÿÿÿÿtest_data_0008.txt
+Constructed filename:       test_data_0008.txt
+9. Accuracy: 88.888889, Detected number: 6, Expected: 0005
+Trying to read file: ÿÿÿÿÿÿtest_data_0009.txt
+Constructed filename:       test_data_0009.txt
+10. Accuracy: 90.000000, Detected number: 9, Expected: 0009
+Trying to read file: ÿÿÿÿÿÿtest_data_0010.txt
+Constructed filename:       test_data_0010.txt
+11. Accuracy: 90.909091, Detected number: 0, Expected: 0000
+Trying to read file: ÿÿÿÿÿÿtest_data_0011.txt
+Constructed filename:       test_data_0011.txt
+12. Accuracy: 91.666667, Detected number: 6, Expected: 0006
+Trying to read file: ÿÿÿÿÿÿtest_data_0012.txt
+Constructed filename:       test_data_0012.txt
+13. Accuracy: 92.307692, Detected number: 9, Expected: 0009
+Trying to read file: ÿÿÿÿÿÿtest_data_0013.txt
+Constructed filename:       test_data_0013.txt
+14. Accuracy: 92.857143, Detected number: 0, Expected: 0000
+Trying to read file: ÿÿÿÿÿÿtest_data_0014.txt
+Constructed filename:       test_data_0014.txt
+15. Accuracy: 86.666667, Detected number: 8, Expected: 0001
+Trying to read file: ÿÿÿÿÿÿtest_data_0015.txt
+Constructed filename:       test_data_0015.txt
+16. Accuracy: 87.500000, Detected number: 5, Expected: 0005
+Trying to read file: ÿÿÿÿÿÿtest_data_0016.txt
+Constructed filename:       test_data_0016.txt
+17. Accuracy: 88.235294, Detected number: 9, Expected: 0009
+Trying to read file: ÿÿÿÿÿÿtest_data_0017.txt
+Constructed filename:       test_data_0017.txt
+18. Accuracy: 88.888889, Detected number: 7, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0018.txt
+Constructed filename:       test_data_0018.txt
+19. Accuracy: 89.473684, Detected number: 3, Expected: 0003
+Trying to read file: ÿÿÿÿÿÿtest_data_0019.txt
+Constructed filename:       test_data_0019.txt
+20. Accuracy: 90.000000, Detected number: 4, Expected: 0004
+Trying to read file: ÿÿÿÿÿÿtest_data_0020.txt
+Constructed filename:       test_data_0020.txt
+21. Accuracy: 90.476190, Detected number: 9, Expected: 0009
+Trying to read file: ÿÿÿÿÿÿtest_data_0021.txt
+Constructed filename:       test_data_0021.txt
+22. Accuracy: 90.909091, Detected number: 6, Expected: 0006
+Trying to read file: ÿÿÿÿÿÿtest_data_0022.txt
+Constructed filename:       test_data_0022.txt
+23. Accuracy: 91.304348, Detected number: 6, Expected: 0006
+Trying to read file: ÿÿÿÿÿÿtest_data_0023.txt
+Constructed filename:       test_data_0023.txt
+24. Accuracy: 91.666667, Detected number: 5, Expected: 0005
+Trying to read file: ÿÿÿÿÿÿtest_data_0024.txt
+Constructed filename:       test_data_0024.txt
+25. Accuracy: 92.000000, Detected number: 4, Expected: 0004
+Trying to read file: ÿÿÿÿÿÿtest_data_0025.txt
+Constructed filename:       test_data_0025.txt
+26. Accuracy: 92.307692, Detected number: 0, Expected: 0000
+Trying to read file: ÿÿÿÿÿÿtest_data_0026.txt
+Constructed filename:       test_data_0026.txt
+27. Accuracy: 92.592593, Detected number: 7, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0027.txt
+Constructed filename:       test_data_0027.txt
+28. Accuracy: 92.857143, Detected number: 4, Expected: 0004
+Trying to read file: ÿÿÿÿÿÿtest_data_0028.txt
+Constructed filename:       test_data_0028.txt
+29. Accuracy: 93.103448, Detected number: 0, Expected: 0000
+Trying to read file: ÿÿÿÿÿÿtest_data_0029.txt
+Constructed filename:       test_data_0029.txt
+30. Accuracy: 93.333333, Detected number: 1, Expected: 0001
+Trying to read file: ÿÿÿÿÿÿtest_data_0030.txt
+Constructed filename:       test_data_0030.txt
+31. Accuracy: 93.548387, Detected number: 3, Expected: 0003
+Trying to read file: ÿÿÿÿÿÿtest_data_0031.txt
+Constructed filename:       test_data_0031.txt
+32. Accuracy: 93.750000, Detected number: 1, Expected: 0001
+Trying to read file: ÿÿÿÿÿÿtest_data_0032.txt
+Constructed filename:       test_data_0032.txt
+33. Accuracy: 93.939394, Detected number: 3, Expected: 0003
+Trying to read file: ÿÿÿÿÿÿtest_data_0033.txt
+Constructed filename:       test_data_0033.txt
+34. Accuracy: 94.117647, Detected number: 4, Expected: 0004
+Trying to read file: ÿÿÿÿÿÿtest_data_0034.txt
+Constructed filename:       test_data_0034.txt
+35. Accuracy: 94.285714, Detected number: 7, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0035.txt
+Constructed filename:       test_data_0035.txt
+36. Accuracy: 94.444444, Detected number: 2, Expected: 0002
+Trying to read file: ÿÿÿÿÿÿtest_data_0036.txt
+Constructed filename:       test_data_0036.txt
+37. Accuracy: 94.594595, Detected number: 7, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0037.txt
+Constructed filename:       test_data_0037.txt
+38. Accuracy: 94.736842, Detected number: 1, Expected: 0001
+Trying to read file: ÿÿÿÿÿÿtest_data_0038.txt
+Constructed filename:       test_data_0038.txt
+39. Accuracy: 94.871795, Detected number: 2, Expected: 0002
+Trying to read file: ÿÿÿÿÿÿtest_data_0039.txt
+Constructed filename:       test_data_0039.txt
+40. Accuracy: 92.500000, Detected number: 8, Expected: 0001
+Trying to read file: ÿÿÿÿÿÿtest_data_0040.txt
+Constructed filename:       test_data_0040.txt
+41. Accuracy: 92.682927, Detected number: 1, Expected: 0001
+Trying to read file: ÿÿÿÿÿÿtest_data_0041.txt
+Constructed filename:       test_data_0041.txt
+42. Accuracy: 92.857143, Detected number: 7, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0042.txt
+Constructed filename:       test_data_0042.txt
+43. Accuracy: 93.023256, Detected number: 4, Expected: 0004
+Trying to read file: ÿÿÿÿÿÿtest_data_0043.txt
+Constructed filename:       test_data_0043.txt
+44. Accuracy: 93.181818, Detected number: 2, Expected: 0002
+Trying to read file: ÿÿÿÿÿÿtest_data_0044.txt
+Constructed filename:       test_data_0044.txt
+45. Accuracy: 93.333333, Detected number: 3, Expected: 0003
+Trying to read file: ÿÿÿÿÿÿtest_data_0045.txt
+Constructed filename:       test_data_0045.txt
+46. Accuracy: 93.478261, Detected number: 5, Expected: 0005
+Trying to read file: ÿÿÿÿÿÿtest_data_0046.txt
+Constructed filename:       test_data_0046.txt
+47. Accuracy: 91.489362, Detected number: 3, Expected: 0001
+Trying to read file: ÿÿÿÿÿÿtest_data_0047.txt
+Constructed filename:       test_data_0047.txt
+48. Accuracy: 91.666667, Detected number: 2, Expected: 0002
+Trying to read file: ÿÿÿÿÿÿtest_data_0048.txt
+Constructed filename:       test_data_0048.txt
+49. Accuracy: 91.836735, Detected number: 4, Expected: 0004
+Trying to read file: ÿÿÿÿÿÿtest_data_0049.txt
+Constructed filename:       test_data_0049.txt
+50. Accuracy: 92.000000, Detected number: 4, Expected: 0004
+Trying to read file: ÿÿÿÿÿÿtest_data_0050.txt
+Constructed filename:       test_data_0050.txt
+51. Accuracy: 92.156863, Detected number: 6, Expected: 0006
+Trying to read file: ÿÿÿÿÿÿtest_data_0051.txt
+Constructed filename:       test_data_0051.txt
+52. Accuracy: 92.307692, Detected number: 3, Expected: 0003
+Trying to read file: ÿÿÿÿÿÿtest_data_0052.txt
+Constructed filename:       test_data_0052.txt
+53. Accuracy: 92.452830, Detected number: 5, Expected: 0005
+Trying to read file: ÿÿÿÿÿÿtest_data_0053.txt
+Constructed filename:       test_data_0053.txt
+54. Accuracy: 92.592593, Detected number: 5, Expected: 0005
+Trying to read file: ÿÿÿÿÿÿtest_data_0054.txt
+Constructed filename:       test_data_0054.txt
+55. Accuracy: 92.727273, Detected number: 6, Expected: 0006
+Trying to read file: ÿÿÿÿÿÿtest_data_0055.txt
+Constructed filename:       test_data_0055.txt
+56. Accuracy: 92.857143, Detected number: 0, Expected: 0000
+Trying to read file: ÿÿÿÿÿÿtest_data_0056.txt
+Constructed filename:       test_data_0056.txt
+57. Accuracy: 92.982456, Detected number: 4, Expected: 0004
+Trying to read file: ÿÿÿÿÿÿtest_data_0057.txt
+Constructed filename:       test_data_0057.txt
+58. Accuracy: 93.103448, Detected number: 1, Expected: 0001
+Trying to read file: ÿÿÿÿÿÿtest_data_0058.txt
+Constructed filename:       test_data_0058.txt
+59. Accuracy: 93.220339, Detected number: 9, Expected: 0009
+Trying to read file: ÿÿÿÿÿÿtest_data_0059.txt
+Constructed filename:       test_data_0059.txt
+60. Accuracy: 93.333333, Detected number: 5, Expected: 0005
+Trying to read file: ÿÿÿÿÿÿtest_data_0060.txt
+Constructed filename:       test_data_0060.txt
+61. Accuracy: 91.803279, Detected number: 9, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0061.txt
+Constructed filename:       test_data_0061.txt
+62. Accuracy: 91.935484, Detected number: 8, Expected: 0008
+Trying to read file: ÿÿÿÿÿÿtest_data_0062.txt
+Constructed filename:       test_data_0062.txt
+63. Accuracy: 92.063492, Detected number: 9, Expected: 0009
+Trying to read file: ÿÿÿÿÿÿtest_data_0063.txt
+Constructed filename:       test_data_0063.txt
+64. Accuracy: 92.187500, Detected number: 3, Expected: 0003
+Trying to read file: ÿÿÿÿÿÿtest_data_0064.txt
+Constructed filename:       test_data_0064.txt
+65. Accuracy: 90.769231, Detected number: 3, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0065.txt
+Constructed filename:       test_data_0065.txt
+66. Accuracy: 90.909091, Detected number: 4, Expected: 0004
+Trying to read file: ÿÿÿÿÿÿtest_data_0066.txt
+Constructed filename:       test_data_0066.txt
+67. Accuracy: 91.044776, Detected number: 6, Expected: 0006
+Trying to read file: ÿÿÿÿÿÿtest_data_0067.txt
+Constructed filename:       test_data_0067.txt
+68. Accuracy: 91.176471, Detected number: 4, Expected: 0004
+Trying to read file: ÿÿÿÿÿÿtest_data_0068.txt
+Constructed filename:       test_data_0068.txt
+69. Accuracy: 91.304348, Detected number: 3, Expected: 0003
+Trying to read file: ÿÿÿÿÿÿtest_data_0069.txt
+Constructed filename:       test_data_0069.txt
+70. Accuracy: 91.428571, Detected number: 0, Expected: 0000
+Trying to read file: ÿÿÿÿÿÿtest_data_0070.txt
+Constructed filename:       test_data_0070.txt
+71. Accuracy: 91.549296, Detected number: 7, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0071.txt
+Constructed filename:       test_data_0071.txt
+72. Accuracy: 91.666667, Detected number: 0, Expected: 0000
+Trying to read file: ÿÿÿÿÿÿtest_data_0072.txt
+Constructed filename:       test_data_0072.txt
+73. Accuracy: 91.780822, Detected number: 2, Expected: 0002
+Trying to read file: ÿÿÿÿÿÿtest_data_0073.txt
+Constructed filename:       test_data_0073.txt
+74. Accuracy: 91.891892, Detected number: 9, Expected: 0009
+Trying to read file: ÿÿÿÿÿÿtest_data_0074.txt
+Constructed filename:       test_data_0074.txt
+75. Accuracy: 92.000000, Detected number: 1, Expected: 0001
+Trying to read file: ÿÿÿÿÿÿtest_data_0075.txt
+Constructed filename:       test_data_0075.txt
+76. Accuracy: 90.789474, Detected number: 9, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0076.txt
+Constructed filename:       test_data_0076.txt
+77. Accuracy: 90.909091, Detected number: 3, Expected: 0003
+Trying to read file: ÿÿÿÿÿÿtest_data_0077.txt
+Constructed filename:       test_data_0077.txt
+78. Accuracy: 91.025641, Detected number: 2, Expected: 0002
+Trying to read file: ÿÿÿÿÿÿtest_data_0078.txt
+Constructed filename:       test_data_0078.txt
+79. Accuracy: 91.139241, Detected number: 9, Expected: 0009
+Trying to read file: ÿÿÿÿÿÿtest_data_0079.txt
+Constructed filename:       test_data_0079.txt
+80. Accuracy: 91.250000, Detected number: 7, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0080.txt
+Constructed filename:       test_data_0080.txt
+81. Accuracy: 91.358025, Detected number: 7, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0081.txt
+Constructed filename:       test_data_0081.txt
+82. Accuracy: 91.463415, Detected number: 6, Expected: 0006
+Trying to read file: ÿÿÿÿÿÿtest_data_0082.txt
+Constructed filename:       test_data_0082.txt
+83. Accuracy: 91.566265, Detected number: 2, Expected: 0002
+Trying to read file: ÿÿÿÿÿÿtest_data_0083.txt
+Constructed filename:       test_data_0083.txt
+84. Accuracy: 91.666667, Detected number: 7, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0084.txt
+Constructed filename:       test_data_0084.txt
+85. Accuracy: 91.764706, Detected number: 8, Expected: 0008
+Trying to read file: ÿÿÿÿÿÿtest_data_0085.txt
+Constructed filename:       test_data_0085.txt
+86. Accuracy: 91.860465, Detected number: 4, Expected: 0004
+Trying to read file: ÿÿÿÿÿÿtest_data_0086.txt
+Constructed filename:       test_data_0086.txt
+87. Accuracy: 91.954023, Detected number: 7, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0087.txt
+Constructed filename:       test_data_0087.txt
+88. Accuracy: 92.045455, Detected number: 3, Expected: 0003
+Trying to read file: ÿÿÿÿÿÿtest_data_0088.txt
+Constructed filename:       test_data_0088.txt
+89. Accuracy: 92.134831, Detected number: 6, Expected: 0006
+Trying to read file: ÿÿÿÿÿÿtest_data_0089.txt
+Constructed filename:       test_data_0089.txt
+90. Accuracy: 92.222222, Detected number: 1, Expected: 0001
+Trying to read file: ÿÿÿÿÿÿtest_data_0090.txt
+Constructed filename:       test_data_0090.txt
+91. Accuracy: 92.307692, Detected number: 3, Expected: 0003
+Trying to read file: ÿÿÿÿÿÿtest_data_0091.txt
+Constructed filename:       test_data_0091.txt
+92. Accuracy: 92.391304, Detected number: 6, Expected: 0006
+Trying to read file: ÿÿÿÿÿÿtest_data_0092.txt
+Constructed filename:       test_data_0092.txt
+93. Accuracy: 92.473118, Detected number: 9, Expected: 0009
+Trying to read file: ÿÿÿÿÿÿtest_data_0093.txt
+Constructed filename:       test_data_0093.txt
+94. Accuracy: 92.553191, Detected number: 3, Expected: 0003
+Trying to read file: ÿÿÿÿÿÿtest_data_0094.txt
+Constructed filename:       test_data_0094.txt
+95. Accuracy: 91.578947, Detected number: 8, Expected: 0001
+Trying to read file: ÿÿÿÿÿÿtest_data_0095.txt
+Constructed filename:       test_data_0095.txt
+96. Accuracy: 91.666667, Detected number: 4, Expected: 0004
+Trying to read file: ÿÿÿÿÿÿtest_data_0096.txt
+Constructed filename:       test_data_0096.txt
+97. Accuracy: 91.752577, Detected number: 1, Expected: 0001
+Trying to read file: ÿÿÿÿÿÿtest_data_0097.txt
+Constructed filename:       test_data_0097.txt
+98. Accuracy: 90.816327, Detected number: 9, Expected: 0007
+Trying to read file: ÿÿÿÿÿÿtest_data_0098.txt
+Constructed filename:       test_data_0098.txt
+99. Accuracy: 90.909091, Detected number: 6, Expected: 0006
+Trying to read file: ÿÿÿÿÿÿtest_data_0099.txt
+Constructed filename:       test_data_0099.txt
+100. Accuracy: 91.000000, Detected number: 9, Expected: 0009
+Accuracy: 91.000000
+$stop called at time : 900235 ns : File "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/tb/top_sim.v" Line 388
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 3165.934 ; gain = 0.000
+relaunch_sim
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\NeuralNetworks\neuralNetwork\verification_ph2\src\fpga\rtl\zynet.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\NeuralNetworks\neuralNetwork\verification_ph2\src\fpga\tb\top_sim.v:]
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'top_sim'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+ERROR: [Common 17-180] Spawn failed: No error
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_10.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_11.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_12.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_13.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_14.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_15.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_16.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_17.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_18.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_19.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_2.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_20.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_21.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_22.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_23.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_24.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_25.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_26.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_27.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_28.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_29.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_3.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_4.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_5.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_6.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_7.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_8.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_1_9.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_10.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_11.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_12.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_13.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_14.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_15.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_16.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_17.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_18.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_19.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_2.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_20.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_21.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_22.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_23.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_24.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_25.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_26.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_27.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_28.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_29.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_3.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_4.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_5.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_6.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_7.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_8.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_2_9.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_2.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_3.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_4.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_5.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_6.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_7.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_8.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_3_9.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_2.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_3.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_4.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_5.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_6.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_7.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_8.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/b_4_9.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/sigContent.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_10.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_11.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_12.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_13.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_14.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_15.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_16.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_17.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_18.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_19.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_2.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_20.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_21.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_22.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_23.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_24.mif'
+INFO: [SIM-utils-43] Exported 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim/w_1_25.mif'
+INFO: [Common 17-14] Message 'SIM-utils 43' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_sim_vlog.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Layer_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Layer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Layer_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Layer_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Sig_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sig_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Weight_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Weight_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/axi_lite_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_lite_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/maxFinder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maxFinder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/neuron.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/relu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReLU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/zynet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zyNet
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/tb/top_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3165.934 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'top_sim'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_sim_vlog.prj"
+ECHO is off.
+ECHO is off.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim xil_defaultlib.glbl -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 's_axi_awaddr' [C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/tb/top_sim.v:73]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 's_axi_awprot' [C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/tb/top_sim.v:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 's_axi_araddr' [C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/tb/top_sim.v:84]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 's_axi_arprot' [C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/tb/top_sim.v:85]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'radd' [C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/neuron.v:172]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'i_valid' [C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/zynet.v:378]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_1.v" Line 1. Module Layer_1(sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_2.v" Line 1. Module Layer_2(numWeight=30,layerNum=2,sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_3.v" Line 1. Module Layer_3(NN=10,numWeight=30,layerNum=3,sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_4.v" Line 1. Module Layer_4(NN=10,numWeight=10,layerNum=4,sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_1.v" Line 1. Module Layer_1(sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_2.v" Line 1. Module Layer_2(numWeight=30,layerNum=2,sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_3.v" Line 1. Module Layer_3(NN=10,numWeight=30,layerNum=3,sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/rtl/Layer_4.v" Line 1. Module Layer_4(NN=10,numWeight=10,layerNum=4,sigmoidSize=5) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_lite_wrapper_default
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.ReLU
+Compiling module xil_defaultlib.neuron(layerNo=1,weightIntWidth=...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=1,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=2,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=3,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=4,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,weig...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=5,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=6,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=7,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=8,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=9,weig...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=10,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=11,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=12,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=13,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=14,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=15,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=16,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=17,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=18,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=19,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=20,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=21,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=22,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=23,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=24,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=25,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=26,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=27,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=28,wei...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=784,neur...
+Compiling module xil_defaultlib.neuron(layerNo=1,neuronNo=29,wei...
+Compiling module xil_defaultlib.Layer_1(sigmoidSize=5)
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,numWeight=30,we...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=1,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=2,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=3,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=4,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,layer...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=5,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=6,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=7,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=8,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=9,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=10,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=11,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=12,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=13,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=14,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=15,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=16,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=17,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=18,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=19,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=20,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=21,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=22,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=23,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=24,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=25,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=26,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=27,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=28,num...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=2,neuronNo=29,num...
+Compiling module xil_defaultlib.Layer_2(numWeight=30,layerNum=2,...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,numWeight=30,we...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=1,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=2,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=3,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=4,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,layer...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=5,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=6,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=7,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=8,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=30,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=3,neuronNo=9,numW...
+Compiling module xil_defaultlib.Layer_3(NN=10,numWeight=30,layer...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,numWeight=10,we...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=1,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=2,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=3,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=4,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,layer...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=5,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=6,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=7,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=8,numW...
+Compiling module xil_defaultlib.Weight_Memory(numWeight=10,neuro...
+Compiling module xil_defaultlib.neuron(layerNo=4,neuronNo=9,numW...
+Compiling module xil_defaultlib.Layer_4(NN=10,numWeight=10,layer...
+Compiling module xil_defaultlib.maxFinder
+Compiling module xil_defaultlib.zyNet
+Compiling module xil_defaultlib.top_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_sim_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 3165.934 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '20' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/NeuralNetworks/neuralNetwork/verification_ph2/MNIST_NETS/myProject1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Configuration completed                      0 ns
+Constructed filename:       test_data_0000.txt
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:29 . Memory (MB): peak = 3165.934 ; gain = 0.000
+run all
+1. Accuracy: 100.000000, Detected number: 7, Expected: 0007
+Constructed filename:       test_data_0001.txt
+2. Accuracy: 100.000000, Detected number: 2, Expected: 0002
+Constructed filename:       test_data_0002.txt
+3. Accuracy: 100.000000, Detected number: 1, Expected: 0001
+Constructed filename:       test_data_0003.txt
+4. Accuracy: 100.000000, Detected number: 0, Expected: 0000
+Constructed filename:       test_data_0004.txt
+5. Accuracy: 100.000000, Detected number: 4, Expected: 0004
+Constructed filename:       test_data_0005.txt
+6. Accuracy: 100.000000, Detected number: 1, Expected: 0001
+Constructed filename:       test_data_0006.txt
+7. Accuracy: 100.000000, Detected number: 4, Expected: 0004
+Constructed filename:       test_data_0007.txt
+8. Accuracy: 100.000000, Detected number: 9, Expected: 0009
+Constructed filename:       test_data_0008.txt
+9. Accuracy: 88.888889, Detected number: 6, Expected: 0005
+Constructed filename:       test_data_0009.txt
+10. Accuracy: 90.000000, Detected number: 9, Expected: 0009
+Constructed filename:       test_data_0010.txt
+11. Accuracy: 90.909091, Detected number: 0, Expected: 0000
+Constructed filename:       test_data_0011.txt
+12. Accuracy: 91.666667, Detected number: 6, Expected: 0006
+Constructed filename:       test_data_0012.txt
+13. Accuracy: 92.307692, Detected number: 9, Expected: 0009
+Constructed filename:       test_data_0013.txt
+14. Accuracy: 92.857143, Detected number: 0, Expected: 0000
+Constructed filename:       test_data_0014.txt
+15. Accuracy: 86.666667, Detected number: 8, Expected: 0001
+Constructed filename:       test_data_0015.txt
+16. Accuracy: 87.500000, Detected number: 5, Expected: 0005
+Constructed filename:       test_data_0016.txt
+17. Accuracy: 88.235294, Detected number: 9, Expected: 0009
+Constructed filename:       test_data_0017.txt
+18. Accuracy: 88.888889, Detected number: 7, Expected: 0007
+Constructed filename:       test_data_0018.txt
+19. Accuracy: 89.473684, Detected number: 3, Expected: 0003
+Constructed filename:       test_data_0019.txt
+20. Accuracy: 90.000000, Detected number: 4, Expected: 0004
+Constructed filename:       test_data_0020.txt
+21. Accuracy: 90.476190, Detected number: 9, Expected: 0009
+Constructed filename:       test_data_0021.txt
+22. Accuracy: 90.909091, Detected number: 6, Expected: 0006
+Constructed filename:       test_data_0022.txt
+23. Accuracy: 91.304348, Detected number: 6, Expected: 0006
+Constructed filename:       test_data_0023.txt
+24. Accuracy: 91.666667, Detected number: 5, Expected: 0005
+Constructed filename:       test_data_0024.txt
+25. Accuracy: 92.000000, Detected number: 4, Expected: 0004
+Constructed filename:       test_data_0025.txt
+26. Accuracy: 92.307692, Detected number: 0, Expected: 0000
+Constructed filename:       test_data_0026.txt
+27. Accuracy: 92.592593, Detected number: 7, Expected: 0007
+Constructed filename:       test_data_0027.txt
+28. Accuracy: 92.857143, Detected number: 4, Expected: 0004
+Constructed filename:       test_data_0028.txt
+29. Accuracy: 93.103448, Detected number: 0, Expected: 0000
+Constructed filename:       test_data_0029.txt
+30. Accuracy: 93.333333, Detected number: 1, Expected: 0001
+Constructed filename:       test_data_0030.txt
+31. Accuracy: 93.548387, Detected number: 3, Expected: 0003
+Constructed filename:       test_data_0031.txt
+32. Accuracy: 93.750000, Detected number: 1, Expected: 0001
+Constructed filename:       test_data_0032.txt
+33. Accuracy: 93.939394, Detected number: 3, Expected: 0003
+Constructed filename:       test_data_0033.txt
+34. Accuracy: 94.117647, Detected number: 4, Expected: 0004
+Constructed filename:       test_data_0034.txt
+35. Accuracy: 94.285714, Detected number: 7, Expected: 0007
+Constructed filename:       test_data_0035.txt
+36. Accuracy: 94.444444, Detected number: 2, Expected: 0002
+Constructed filename:       test_data_0036.txt
+37. Accuracy: 94.594595, Detected number: 7, Expected: 0007
+Constructed filename:       test_data_0037.txt
+38. Accuracy: 94.736842, Detected number: 1, Expected: 0001
+Constructed filename:       test_data_0038.txt
+39. Accuracy: 94.871795, Detected number: 2, Expected: 0002
+Constructed filename:       test_data_0039.txt
+40. Accuracy: 92.500000, Detected number: 8, Expected: 0001
+Constructed filename:       test_data_0040.txt
+41. Accuracy: 92.682927, Detected number: 1, Expected: 0001
+Constructed filename:       test_data_0041.txt
+42. Accuracy: 92.857143, Detected number: 7, Expected: 0007
+Constructed filename:       test_data_0042.txt
+43. Accuracy: 93.023256, Detected number: 4, Expected: 0004
+Constructed filename:       test_data_0043.txt
+44. Accuracy: 93.181818, Detected number: 2, Expected: 0002
+Constructed filename:       test_data_0044.txt
+45. Accuracy: 93.333333, Detected number: 3, Expected: 0003
+Constructed filename:       test_data_0045.txt
+46. Accuracy: 93.478261, Detected number: 5, Expected: 0005
+Constructed filename:       test_data_0046.txt
+47. Accuracy: 91.489362, Detected number: 3, Expected: 0001
+Constructed filename:       test_data_0047.txt
+48. Accuracy: 91.666667, Detected number: 2, Expected: 0002
+Constructed filename:       test_data_0048.txt
+49. Accuracy: 91.836735, Detected number: 4, Expected: 0004
+Constructed filename:       test_data_0049.txt
+50. Accuracy: 92.000000, Detected number: 4, Expected: 0004
+Constructed filename:       test_data_0050.txt
+51. Accuracy: 92.156863, Detected number: 6, Expected: 0006
+Constructed filename:       test_data_0051.txt
+52. Accuracy: 92.307692, Detected number: 3, Expected: 0003
+Constructed filename:       test_data_0052.txt
+53. Accuracy: 92.452830, Detected number: 5, Expected: 0005
+Constructed filename:       test_data_0053.txt
+54. Accuracy: 92.592593, Detected number: 5, Expected: 0005
+Constructed filename:       test_data_0054.txt
+55. Accuracy: 92.727273, Detected number: 6, Expected: 0006
+Constructed filename:       test_data_0055.txt
+56. Accuracy: 92.857143, Detected number: 0, Expected: 0000
+Constructed filename:       test_data_0056.txt
+57. Accuracy: 92.982456, Detected number: 4, Expected: 0004
+Constructed filename:       test_data_0057.txt
+58. Accuracy: 93.103448, Detected number: 1, Expected: 0001
+Constructed filename:       test_data_0058.txt
+59. Accuracy: 93.220339, Detected number: 9, Expected: 0009
+Constructed filename:       test_data_0059.txt
+60. Accuracy: 93.333333, Detected number: 5, Expected: 0005
+Constructed filename:       test_data_0060.txt
+61. Accuracy: 91.803279, Detected number: 9, Expected: 0007
+Constructed filename:       test_data_0061.txt
+62. Accuracy: 91.935484, Detected number: 8, Expected: 0008
+Constructed filename:       test_data_0062.txt
+63. Accuracy: 92.063492, Detected number: 9, Expected: 0009
+Constructed filename:       test_data_0063.txt
+64. Accuracy: 92.187500, Detected number: 3, Expected: 0003
+Constructed filename:       test_data_0064.txt
+65. Accuracy: 90.769231, Detected number: 3, Expected: 0007
+Constructed filename:       test_data_0065.txt
+66. Accuracy: 90.909091, Detected number: 4, Expected: 0004
+Constructed filename:       test_data_0066.txt
+67. Accuracy: 91.044776, Detected number: 6, Expected: 0006
+Constructed filename:       test_data_0067.txt
+68. Accuracy: 91.176471, Detected number: 4, Expected: 0004
+Constructed filename:       test_data_0068.txt
+69. Accuracy: 91.304348, Detected number: 3, Expected: 0003
+Constructed filename:       test_data_0069.txt
+70. Accuracy: 91.428571, Detected number: 0, Expected: 0000
+Constructed filename:       test_data_0070.txt
+71. Accuracy: 91.549296, Detected number: 7, Expected: 0007
+Constructed filename:       test_data_0071.txt
+72. Accuracy: 91.666667, Detected number: 0, Expected: 0000
+Constructed filename:       test_data_0072.txt
+73. Accuracy: 91.780822, Detected number: 2, Expected: 0002
+Constructed filename:       test_data_0073.txt
+74. Accuracy: 91.891892, Detected number: 9, Expected: 0009
+Constructed filename:       test_data_0074.txt
+75. Accuracy: 92.000000, Detected number: 1, Expected: 0001
+Constructed filename:       test_data_0075.txt
+76. Accuracy: 90.789474, Detected number: 9, Expected: 0007
+Constructed filename:       test_data_0076.txt
+77. Accuracy: 90.909091, Detected number: 3, Expected: 0003
+Constructed filename:       test_data_0077.txt
+78. Accuracy: 91.025641, Detected number: 2, Expected: 0002
+Constructed filename:       test_data_0078.txt
+79. Accuracy: 91.139241, Detected number: 9, Expected: 0009
+Constructed filename:       test_data_0079.txt
+80. Accuracy: 91.250000, Detected number: 7, Expected: 0007
+Constructed filename:       test_data_0080.txt
+81. Accuracy: 91.358025, Detected number: 7, Expected: 0007
+Constructed filename:       test_data_0081.txt
+82. Accuracy: 91.463415, Detected number: 6, Expected: 0006
+Constructed filename:       test_data_0082.txt
+83. Accuracy: 91.566265, Detected number: 2, Expected: 0002
+Constructed filename:       test_data_0083.txt
+84. Accuracy: 91.666667, Detected number: 7, Expected: 0007
+Constructed filename:       test_data_0084.txt
+85. Accuracy: 91.764706, Detected number: 8, Expected: 0008
+Constructed filename:       test_data_0085.txt
+86. Accuracy: 91.860465, Detected number: 4, Expected: 0004
+Constructed filename:       test_data_0086.txt
+87. Accuracy: 91.954023, Detected number: 7, Expected: 0007
+Constructed filename:       test_data_0087.txt
+88. Accuracy: 92.045455, Detected number: 3, Expected: 0003
+Constructed filename:       test_data_0088.txt
+89. Accuracy: 92.134831, Detected number: 6, Expected: 0006
+Constructed filename:       test_data_0089.txt
+90. Accuracy: 92.222222, Detected number: 1, Expected: 0001
+Constructed filename:       test_data_0090.txt
+91. Accuracy: 92.307692, Detected number: 3, Expected: 0003
+Constructed filename:       test_data_0091.txt
+92. Accuracy: 92.391304, Detected number: 6, Expected: 0006
+Constructed filename:       test_data_0092.txt
+93. Accuracy: 92.473118, Detected number: 9, Expected: 0009
+Constructed filename:       test_data_0093.txt
+94. Accuracy: 92.553191, Detected number: 3, Expected: 0003
+Constructed filename:       test_data_0094.txt
+95. Accuracy: 91.578947, Detected number: 8, Expected: 0001
+Constructed filename:       test_data_0095.txt
+96. Accuracy: 91.666667, Detected number: 4, Expected: 0004
+Constructed filename:       test_data_0096.txt
+97. Accuracy: 91.752577, Detected number: 1, Expected: 0001
+Constructed filename:       test_data_0097.txt
+98. Accuracy: 90.816327, Detected number: 9, Expected: 0007
+Constructed filename:       test_data_0098.txt
+99. Accuracy: 90.909091, Detected number: 6, Expected: 0006
+Constructed filename:       test_data_0099.txt
+100. Accuracy: 91.000000, Detected number: 9, Expected: 0009
+Accuracy: 91.000000
+$stop called at time : 900235 ns : File "C:/NeuralNetworks/neuralNetwork/verification_ph2/src/fpga/tb/top_sim.v" Line 388
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 3165.934 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 19 13:54:06 2024...
